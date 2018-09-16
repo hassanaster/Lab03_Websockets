@@ -9,6 +9,7 @@ import com.udea.entity.User;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 /**
  *
@@ -29,4 +30,12 @@ public class UserFacade extends AbstractFacade<User> implements UserFacadeLocal 
         super(User.class);
     }
     
+    @Override
+    public boolean checklogin(String p, String u) {
+         Query q = em.createQuery("select a from Account a " 
+                + "Where a.username=:u and a.password=:p");
+        q.setParameter("u",u);
+        q.setParameter("p",p);
+        return q.getResultList().size()>0;
+    }
 }

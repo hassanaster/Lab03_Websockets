@@ -30,4 +30,6 @@ public interface UserFacadeLocal {
 
     int count();
     
+    public boolean checklogin(String p, String u);
+    
 }
