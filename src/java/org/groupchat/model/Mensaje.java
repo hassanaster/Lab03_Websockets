@@ -16,11 +16,11 @@ public class Mensaje {
     public Mensaje() {
     }
 
-    static public String getNickname() {
+    public String getNickname() {
         return nickname;
     }
 
-    static public String getMessage() {
+    public String getMessage() {
         return message;
     }
 

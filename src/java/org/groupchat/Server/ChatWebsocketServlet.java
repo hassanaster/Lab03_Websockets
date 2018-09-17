@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.websocket.EncodeException;
 import javax.websocket.OnClose;
+import javax.websocket.OnError;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
@@ -28,7 +29,7 @@ import org.groupchat.model.Mensaje;
 @ServerEndpoint(value="/chat", encoders = {MessageEncoder.class},decoders = {
     DecoderMessage.class})
 public class ChatWebsocketServlet {
-    private static final List <Session> conectados = new ArrayList();
+    private static final List <Session> conectados = new ArrayList<>();
     
     
     //This add a person that want to be add in te session
@@ -49,6 +50,10 @@ public class ChatWebsocketServlet {
         for(Session sesion : conectados){
             sesion.getBasicRemote().sendObject(mensaje);
         }
+    }
+
+    @OnError
+    public void onError(Throwable t) {
     }
 
 }

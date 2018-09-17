@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/org/groupchat/Server/ChatWebsocketServlet.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/web/codigo.js</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/com/udea/ejb/UserFacade.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/org/groupchat/model/Mensaje.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/com/udea/entity/Chat.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/org/groupchat/Encoder/MessageEncoder.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/com/udea/ejb/AbstractFacade.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/org/groupchat/Decoder/DecoderMessage.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/src/java/com/udea/ejb/UserFacadeLocal.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GroupChat/web/index.html</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

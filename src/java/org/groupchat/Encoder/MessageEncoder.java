@@ -23,13 +23,13 @@ public class MessageEncoder implements Encoder.TextStream  <Mensaje> {
 
     //Recieve the message and convert in jason
     @Override
-    public void encode(Mensaje arg0, Writer arg1) 
+    public void encode(Mensaje object, Writer writer) 
             throws EncodeException, IOException {
         JsonObject json = Json.createObjectBuilder()
-                .add("nickname", Mensaje.getNickname())
-                .add("message", Mensaje.getMessage())
+                .add("nombre", object.getNickname())
+                .add("mensaje", object.getMessage())
                 .build();
-        try (JsonWriter jsonWriter = Json.createWriter(arg1)){ 
+        try (JsonWriter jsonWriter = Json.createWriter(writer)){ 
             jsonWriter.writeObject(json);
         } 
        

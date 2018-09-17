@@ -27,8 +27,8 @@ public class DecoderMessage implements Decoder.TextStream <Mensaje> {
         Mensaje mensaje = new Mensaje ();
         try(JsonReader jsonReader = Json.createReader(reader)){
             JsonObject json = jsonReader.readObject();
-            mensaje.setNickname(json.getString("nickname"));
-            mensaje.setMessage(json.getString("message"));
+            mensaje.setNickname(json.getString("nombre"));
+            mensaje.setMessage(json.getString("mensaje"));
         }
         return mensaje;
     }
